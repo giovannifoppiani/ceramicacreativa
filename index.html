@@ -75,7 +75,7 @@ body{
 
 /* ---------- shared type ---------- */
 
-.body{font-size:17px;line-height:23px;color:var(--tan)}
+.body{font-size:19px;line-height:26px;color:var(--tan)}
 .body p+p{margin-top:14px}
 
 /* ---------- headings ---------- */
@@ -101,6 +101,7 @@ body{
 .intro{margin-top:16px}
 
 .section-block{margin-top:0}
+.page-home .section-block:first-of-type .subhead{margin-top:26px}
 .section-img{
   display:block;
   width:100%;
@@ -189,20 +190,11 @@ body{
   position:absolute;top:0;left:0;right:0;
   height:1px;background:var(--tan);opacity:var(--rule);
 }
-.nav-space{height:260px}
+.nav-space{height:310px}
 
 /* ---------- contatti ---------- */
 
-.servizi{
-  margin-top:26px;
-  display:flex;
-  flex-direction:column;
-  gap:30px;
-  font-size:20px;
-  line-height:26px;
-  color:var(--tan);
-}
-.servizi-rule{margin-top:40px}
+.servizi .subhead:first-child{margin-top:26px}
 .recapiti{margin-top:120px}
 .recapiti a{color:var(--tan);text-decoration:none}
 .contatti-tail{height:80px}
@@ -272,8 +264,6 @@ a:focus-visible,.icon:focus-visible{outline:1px solid var(--cream);outline-offse
       </button>
     </header>
     <div class="rule hdr-rule"></div>
-
-    <p class="body intro">Angela Tosi realizza maioliche, sperimenta tecnica Raku e autoproduce smalti a basse temperature, proponendo laboratori di ceramica creativa.</p>
 
     <div class="section-block">
       <div class="subhead">Tornio e decorazione</div>
@@ -434,7 +424,6 @@ a:focus-visible,.icon:focus-visible{outline:1px solid var(--cream);outline-offse
     <div class="rule hdr-rule"></div>
 
     <nav class="nav">
-      <a href="#home">Home</a>
       <a href="#progetti">Progetti</a>
       <a href="#cv">Bio</a>
       <a href="#contatti">Contatti</a>
@@ -479,11 +468,10 @@ a:focus-visible,.icon:focus-visible{outline:1px solid var(--cream);outline-offse
     <div class="rule hdr-rule"></div>
 
     <div class="servizi">
-      <div>Tornio e decorazione</div>
-      <div>Ricerca e smalti</div>
-      <div>Laboratorio creativo</div>
+      <div class="subhead">Tornio e decorazione</div>
+      <div class="subhead">Ricerca e smalti</div>
+      <div class="subhead">Laboratorio creativo</div>
     </div>
-    <div class="rule servizi-rule"></div>
 
     <div class="body recapiti">
       <div><a href="mailto:angelatosi@ceramichiera.it">angelatosi@ceramichiera.it</a></div>
