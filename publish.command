@@ -2,7 +2,7 @@
 cd "$(dirname "$0")"
 
 echo "Checking for changes..."
-git add index.html assets .gitignore
+git add index.html img .gitignore
 
 if git diff --cached --quiet; then
   echo "Nothing to publish — no changes since the last update."
